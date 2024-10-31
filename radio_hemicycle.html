@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Hemicycle</title>
+    <style>
+.content {
+  position: relative;
+  background: green;
+  color: #f1f1f1;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: white; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  text-transform: uppercase;
+}
+
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url(assemblee-nationale.jpg);
+
+  /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: green; /* Fallback color */
+  background-color: green; /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h1>Radio Hemicycle (103.4)</h1>
+    <p style="font-style: italic; font-size: 20px; color: yellow;">Informer le peuple...</p>
+    <div>
+        <audio controls style="width: 70%; background-color: white;">
+            <source src="https://listen.radioking.com/radio/117355/stream/156709" type="audio/mpeg">
+            Votre navigateur ne supporte pas l'élément audio.
+        </audio>
+    </div>
+</div>
+
+</body>
+</html>
